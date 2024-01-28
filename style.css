@@ -470,6 +470,8 @@ padding-left: 34px;
     }
     .secondPage__section{
         flex-direction: column;
+        align-items: center;
+
     }
     .secondPage__section-info p{
         font-family: Merriweather;

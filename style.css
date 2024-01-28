@@ -204,7 +204,7 @@ padding-left: 34px;
         padding: 20px;
     }
     .firstPage__inner{
-        background-image: url('/src/main\ screen.png');
+        background-image: url('/src/mainScreen.png');
         height: 100%;
         background-repeat:no-repeat;
         background-size: cover;

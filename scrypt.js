@@ -1,7 +1,9 @@
 const btnDark = document.querySelector('.btn_dark'),
     secondPage = document.querySelector('.secondPage__section'),
+    secondPagePhone = document.querySelector('.secondPage__section-phone'),
     btnwhite = document.querySelector('.btn_white'),
-    fourthPage = document.querySelector('.fourthPage__header');
+    fourthPage = document.querySelector('.fourthPage__header'),
+    fourthPagePhone = document.querySelector('.fourthPage_phone')
 
 
 const slidesWrapper  =document.querySelector('.fourthPage__slider'),
@@ -55,13 +57,19 @@ modal.addEventListener('click',(e)=>{
 })
 
 //navigation
-function handleButtonClick (btn,page){
+function handleButtonClick (btn,pagePc,pagePhone){
     btn.addEventListener('click',()=>{
-        page.scrollIntoView({ block: "start", behavior: "smooth" });
+        if(window.screen.availWidth > 480){
+            pagePc.scrollIntoView({ block: "start", behavior: "smooth" });   
+        }else{
+            pagePhone.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+        
     })
 }
-handleButtonClick(btnDark,secondPage);
-handleButtonClick(btnwhite,fourthPage)
+console.log(fourthPage)
+handleButtonClick(btnDark,secondPage,secondPagePhone);
+handleButtonClick(btnwhite,fourthPage,fourthPagePhone)
 
 //slider1
 
@@ -87,6 +95,7 @@ function showSlide (n){
 
     current.textContent = slideIndex*3;
     total.textContent = tripples.length*3;
+    
 }
 
 setInterval(()=>{

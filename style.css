@@ -24,10 +24,12 @@ a {
     max-width: 1288px;
     margin: 0 auto
 }
-@media(max-width:480px){
+@media(max-width:680px){
     .container{
         padding: 17px;
         padding-top: 10px;
+        text-align: center;
+    
     }
 }
 @media(max-width:1200px){
@@ -360,11 +362,37 @@ padding-left: 34px;
 .link{
     padding-top: 10px;
 }
+
 @media(max-width:999px){
     .secondPage__section:first-child p {
         padding-right: 0px;
     }
 }
+@media(max-width:932px){
+    
+    .secondPage__header-red {
+        font-size: 20px; 
+    }
+    .secondPage__section-second img{
+        height: 70%;
+    }
+    .secondPage__section-second img{
+        width: 400px;
+        height: 400px;
+    }
+    .secondPage__section-info p{
+            font-size: 20px;
+    }
+    
+    .secondPage__section p {
+        font-size: 19px;
+    }
+    .thirtyPage__header-label {
+        font-family: Merriweather;
+        font-size: 44px;
+    }
+}
+
 
 
 
@@ -376,10 +404,22 @@ padding-left: 34px;
         font-size: 13px;
     }
 }
+@media(max-width:768px){
+    .thirtyPage__table div p{
+        font-size: 12px;
+    }
+    .info-response {
+        font-size: 9px;
+    }
+    .secondPage__section-info p a {
+        font-family: Golos Text;
+        font-size: 14px;}
+    
+}
 
 
 
-@media(max-width:480px){
+@media(max-width:680px){
     .secondPage {
         padding-top: 50px;
         margin-bottom: 32px;
@@ -392,7 +432,7 @@ padding-left: 34px;
         display: block;
    }
    .secondPage__section-phone img{
-        width: 100%;
+     width: 311px;
         height: 212px;
         margin-bottom: -11px;
    }
@@ -643,17 +683,16 @@ grid-area: first;
     .thirtyPage__table div p{
         font-size: 17px;
     }
-    
-}
-@media(max-width:768px){
-    .thirtyPage__table div p{
-        font-size: 12px;
+    .thirtyPage__header-label {
+        font-family: Merriweather;
+        font-size: 44px;
     }
-    
 }
 
 
-@media(max-width:480px){
+
+
+@media(max-width:680px){
     .thirtyPage{
         padding-top: 0;
     }
@@ -1077,6 +1116,11 @@ grid-area: first;
     .position h3 {
         font-size: 17px;
         
+    }
+    .fourthPage__header p {
+      
+        font-size: 44px;
+       
     }
 }
 @media(max-width:768px){

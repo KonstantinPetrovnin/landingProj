@@ -59,7 +59,7 @@ modal.addEventListener('click',(e)=>{
 //navigation
 function handleButtonClick (btn,pagePc,pagePhone){
     btn.addEventListener('click',()=>{
-        if(window.screen.availWidth > 480){
+        if(window.screen.availWidth > 680){
             pagePc.scrollIntoView({ block: "start", behavior: "smooth" });   
         }else{
             pagePhone.scrollIntoView({ block: "start", behavior: "smooth" });
